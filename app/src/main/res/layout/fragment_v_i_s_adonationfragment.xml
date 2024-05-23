@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.VISAdonationfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ofwhite"
+        android:backgroundTint="@color/ofwhite">
+
+        <EditText
+            android:id="@+id/mablag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="60dp"
+            android:ems="10"
+            android:hint="Product Name"
+            android:inputType="numberPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/babypink"
+            app:layout_constraintBottom_toTopOf="@+id/usernamepaypal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/usernamepaypal"
+            android:layout_width="292dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="60dp"
+            android:ems="10"
+            android:hint="Product details"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/babypink"
+            app:layout_constraintBottom_toTopOf="@+id/passwordpaypal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mablag" />
+
+        <EditText
+            android:id="@+id/passwordpaypal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="99dp"
+            android:ems="10"
+            android:hint="Estimation of price"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/babypink"
+            app:layout_constraintBottom_toTopOf="@+id/dopaypal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernamepaypal" />
+
+        <Button
+            android:id="@+id/dopaypal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="39dp"
+            android:backgroundTint="@color/babypink"
+            android:text="donate"
+            android:textColor="@color/ofwhite"
+            app:layout_constraintBottom_toTopOf="@+id/Backbtnn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordpaypal" />
+
+        <Button
+            android:id="@+id/Backbtnn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="33dp"
+            android:backgroundTint="@color/babypink"
+            android:text="back"
+            android:textColor="@color/ofwhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dopaypal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

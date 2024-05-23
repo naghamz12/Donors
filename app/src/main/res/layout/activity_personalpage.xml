@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ofwhite"
+    android:backgroundTint="@color/ofwhite"
+    tools:context=".classes.PersonalpageActivity">
+
+    <Button
+        android:id="@+id/finishbtn"
+        android:layout_width="255dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/babypink"
+        android:onClick="doanujj"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/namebenefactorr"
+        android:layout_width="256dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="84dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/babypink"
+        android:textColorHint="@color/babypink"
+        app:layout_constraintBottom_toTopOf="@+id/phonebenefactorr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phonebenefactorr"
+        android:layout_width="247dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="82dp"
+        android:ems="10"
+        android:hint="phone number"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/babypink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namebenefactorr" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="524dp"
+        android:text="Product photo"
+        android:textColor="@color/babypink"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/namebenefactorr"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/perphoto"
+        android:layout_width="212dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/baseline_insert_photo_24"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

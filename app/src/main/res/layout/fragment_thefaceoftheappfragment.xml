@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.thefaceoftheappfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/ofwhite">
+
+
+        <Button
+            android:id="@+id/benefactorbtn"
+            android:layout_width="230dp"
+            android:layout_height="74dp"
+            android:layout_marginBottom="220dp"
+            android:backgroundTint="@color/babypink"
+            android:text="Donor"
+            android:textColor="@color/ofwhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="230dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="364dp"
+            android:backgroundTint="@color/babypink"
+            android:text="Sell"
+            android:textColor="@color/ofwhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="410dp"
+            android:layout_height="279dp"
+            android:src="@drawable/cl"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-3dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

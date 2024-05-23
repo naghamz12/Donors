@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">donations</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="live">
+        <item>الناصره</item>
+        <item>نوف هجليل</item>
+        <item>عفوله</item>
+        <item>كفر مندا </item>
+        <item>طمره</item>
+        <item>عبلين</item>
+        <item>كفر قاسم</item>
+        <item>المشهد</item>
+        <item>يافه الناصره</item>
+        <item>سخنين</item>
+        <item>عرابه</item>
+
+    </string-array>
+
+
+</resources>
