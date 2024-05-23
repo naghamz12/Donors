@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "266364665378",
+    "project_id": "dono-73ba9",
+    "storage_bucket": "dono-73ba9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266364665378:android:83fbd4309350727050147b",
+        "android_client_info": {
+          "package_name": "com.example.dono"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ2m4s5TMfixpr_JsuUGC0U9KN3kk-UYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
