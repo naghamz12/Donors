@@ -36,7 +36,7 @@ public class RecylerViewFragment extends Fragment {
     private String mParam1;
     private String mParam2;
      private RecyclerView recyclerView;
-   private DatanaseRefrence databaseReference;
+   private DatabaseReference databaseReference;
     private   MyAdapter myAdapter;
    private ArrayList<projectdatA> list=new ArrayList<>();
 
