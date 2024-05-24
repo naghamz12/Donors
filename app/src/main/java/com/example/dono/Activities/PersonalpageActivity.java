@@ -1,4 +1,4 @@
-package com.example.dono.classes;
+package com.example.dono.Activities;
 
 import static android.content.ContentValues.TAG;
 
@@ -20,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dono.FrameLayoutActivity;
 import com.example.dono.R;
+import com.example.dono.classes.personaldetailspenefactor;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;

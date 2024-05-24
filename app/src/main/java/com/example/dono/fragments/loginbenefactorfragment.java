@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.example.dono.R;
-import com.example.dono.classes.PersonalpageActivity;
+import com.example.dono.Activities.PersonalpageActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
@@ -86,9 +86,10 @@ public class loginbenefactorfragment extends Fragment {
                       /*  RecylerViewFragment RecylerViewFragment=new RecylerViewFragment();
                         FragmentManager manager=getFragmentManager();
                         manager.beginTransaction().replace(R.id.frameLayout,RecylerViewFragment,RecylerViewFragment.getTag()).commit();*/
-                        Intent i = new Intent(getActivity(), PersonalpageActivity.class);
+                       /* Intent i = new Intent(getActivity(), PersonalpageActivity.class);
                         startActivity(i);
-                        ((Activity) getActivity()).overridePendingTransition(0, 0);
+                        ((Activity) getActivity()).overridePendingTransition(0, 0); */
+                        gotoPersonalpageActivity();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -154,4 +155,10 @@ public class loginbenefactorfragment extends Fragment {
         super.onStart();
         func();
     }
+
+    private void gotoPersonalpageActivity() {
+        Intent i = new Intent(getActivity(), PersonalpageActivity.class);
+        startActivity(i);
+    }
+
 }

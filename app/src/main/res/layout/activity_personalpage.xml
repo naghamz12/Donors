@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/ofwhite"
     android:backgroundTint="@color/ofwhite"
-    tools:context=".classes.PersonalpageActivity">
+    tools:context=".Activities.PersonalpageActivity">
 
     <Button
         android:id="@+id/finishbtn"
