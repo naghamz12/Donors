@@ -32,9 +32,10 @@ public class thefaceoftheappfragment extends Fragment {
 
     public void clickmain()
     {
-etbenefactorbtn=getView().findViewById(R.id.benefactorbtn);
-btnBuy = getView().findViewById(R.id.btnBuy);
-btnBuy.setOnClickListener(new View.OnClickListener() {
+
+    etbenefactorbtn=getView().findViewById(R.id.benefactorbtn);
+    btnBuy = getView().findViewById(R.id.btnBuy);
+    btnBuy.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         gotoBuyFragment();

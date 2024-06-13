@@ -1,85 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutPersonalePage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ofwhite"
     android:backgroundTint="@color/ofwhite"
     tools:context=".Activities.PersonalpageActivity">
 
-    <Button
-        android:id="@+id/finishbtn"
-        android:layout_width="255dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/babypink"
-        android:onClick="doanujj"
-        android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/namebenefactorr"
-        android:layout_width="256dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="256dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="84dp"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:textColor="@color/babypink"
-        android:textColorHint="@color/babypink"
-        app:layout_constraintBottom_toTopOf="@+id/phonebenefactorr"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/finishbtn"
+            android:layout_width="255dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="47dp"
+            android:backgroundTint="@color/babypink"
+            android:onClick="doanujj"
+            android:text="Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phonebenefactorr" />
 
-    <EditText
-        android:id="@+id/phonebenefactorr"
-        android:layout_width="247dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="82dp"
-        android:ems="10"
-        android:hint="phone number"
-        android:inputType="phone"
-        android:textColor="@color/black"
-        android:textColorHint="@color/babypink"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/namebenefactorr" />
+        <EditText
+            android:id="@+id/namebenefactorr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="68dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/babypink"
+            android:textColorHint="@color/babypink"
+            app:layout_constraintBottom_toTopOf="@+id/phonebenefactorr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="194dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="78dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="524dp"
-        android:text="Product photo"
-        android:textColor="@color/babypink"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/namebenefactorr"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/phonebenefactorr"
+            android:layout_width="247dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="95dp"
+            android:ems="10"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/babypink"
+            app:layout_constraintBottom_toTopOf="@+id/finishbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namebenefactorr" />
 
-    <ImageButton
-        android:id="@+id/perphoto"
-        android:layout_width="212dp"
-        android:layout_height="135dp"
-        app:srcCompat="@drawable/baseline_insert_photo_24"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="49dp"
+            android:text="Product photo"
+            android:textColor="@color/babypink"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/namebenefactorr"
+            app:layout_constraintEnd_toEndOf="@+id/perphoto"
+            app:layout_constraintStart_toStartOf="@+id/perphoto"
+            app:layout_constraintTop_toBottomOf="@+id/perphoto" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageButton
+            android:id="@+id/perphoto"
+            android:layout_width="214dp"
+            android:layout_height="174dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_insert_photo_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

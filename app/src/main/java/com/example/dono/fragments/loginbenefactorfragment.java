@@ -94,7 +94,7 @@ public class loginbenefactorfragment extends Fragment {
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(getContext(), "somthing failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "something failed", Toast.LENGTH_SHORT).show();
                     }
                 });}}});
 

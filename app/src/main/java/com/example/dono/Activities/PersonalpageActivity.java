@@ -17,10 +17,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.dono.FrameLayoutActivity;
 import com.example.dono.R;
 import com.example.dono.classes.personaldetailspenefactor;
+import com.example.dono.fragments.VISAdonationfragment;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
@@ -103,9 +105,7 @@ public class PersonalpageActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(DocumentReference documentReference) {
                             Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                            Toast.makeText(PersonalpageActivity.this, "UPLODED SUCCESFULLY", Toast.LENGTH_SHORT).show();
-                            Intent myIntent = new Intent(PersonalpageActivity.this, FrameLayoutActivity.class);
-                            PersonalpageActivity.this.startActivity(myIntent);
+                            gotoVISAdonationfragment();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
@@ -117,6 +117,14 @@ public class PersonalpageActivity extends AppCompatActivity {
                     });
         }
     }
+
+    private void gotoVISAdonationfragment() {
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frameLayoutPersonalePage,new VISAdonationfragment());
+        ft.addToBackStack(null);
+        ft.commit();
+    }
+
     private String UploadImageToFirebase()
     {
 
